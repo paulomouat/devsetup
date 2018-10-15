@@ -1,0 +1,99 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug unit tests",
+            "url": "http://localhost:9876",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "debug"
+            ],
+            "port": 9229
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/index.js"
+        },
+        {
+            "name": "Docker: Attach to Node",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/home/app",
+            "protocol": "inspector"
+        },
+        {
+            "name": "Attach to Node",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "address": "localhost",
+            "restart": false,
+            "sourceMaps": false,
+            "outFiles": [],
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": null
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha All Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--timeout",
+                "999999",
+                "--require",
+                "babel-register",
+                "--colors",
+                "${workspaceFolder}/test"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Current File",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--timeout",
+                "999999",
+                "--require",
+                "babel-register",
+                "--colors",
+                "${file}"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+    ]
+}
