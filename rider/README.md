@@ -1,7 +1,7 @@
 Rider customizations
 =
 
-The files in this repo are organized following the default folder structure on a straight installation of the Rider IDE.
+The files in this repo are organized following the default folder structure in a straight installation of the Rider IDE.
 
 Base folder on disk is:
 `/Users/<user>/Library/Application Support/JetBrains/Rider<version>/`
