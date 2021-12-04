@@ -3,7 +3,7 @@
     <property name="created">2021-11-22T11:15:42</property>
     <property name="ide">Rider</property>
     <property name="ideVersion">2021.2.2.0.0</property>
-    <property name="modified">2021-12-03T15:46:25</property>
+    <property name="modified">2021-12-04T11:12:39</property>
     <property name="originalScheme">Paulo Dark</property>
   </metaInfo>
   <colors>
@@ -1587,6 +1587,18 @@
       <value>
         <option name="FOREGROUND" value="66c3cc" />
         <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="ReSharper.ASP_NET_ROUTE_TEMPLATE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="e0b5b5" />
+      </value>
+    </option>
+    <option name="ReSharper.ASP_NET_ROUTE_TEMPLATE_TOKEN_SUBSTITUTION">
+      <value>
+        <option name="FOREGROUND" value="e0b5b5" />
+        <option name="FONT_TYPE" value="1" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="ReSharper.ASP_NET_RUN_AT_ATTRIBUTE">
