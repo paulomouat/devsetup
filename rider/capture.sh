@@ -1,5 +1,5 @@
 #!/bin/sh
-RIDER_FOLDER="Rider2021.2"
+RIDER_FOLDER="Rider2021.3"
 RIDER_PREFS_PATH="$HOME/Library/Application Support/JetBrains/$RIDER_FOLDER"
 COLORS_FOLDER="colors"
 KEYMAPS_FOLDER="keymaps"
